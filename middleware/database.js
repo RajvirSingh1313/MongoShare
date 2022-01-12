@@ -9,7 +9,7 @@ const client = new MongoClient(String(process.env.ATLAS_URI), {
 async function database(req, res, next) {
     if (!client.isConnected()) await client.connect();
     req.dbClient = client;
-    req.db = client.db("mongshare");
+    req.db = client.db("mongoshare");
     return next();
 }
 

@@ -1,5 +1,5 @@
 {
-  "name": "mongshare",
+  "name": "mongoshare",
   "private": true,
   "scripts": {
     "dev": "next dev",

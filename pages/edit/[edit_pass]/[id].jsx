@@ -50,7 +50,7 @@ const EditCode = ({
                 autoClose: 20000
             });
 
-            axios.post(`${process.env.DOMAIN ? process.env.DOMAIN : "https://mongshare.vercel.app"}/api/edit/${id}`, {
+            axios.post(`${process.env.DOMAIN ? process.env.DOMAIN : "https://mongoshare.vercel.app"}/api/edit/${id}`, {
                 authorName: currUsername,
                 language_label: currLanguage.label,
                 language: currLanguage.value,
@@ -76,7 +76,7 @@ const EditCode = ({
         <div className="p-3">
             <ToastContainer />
             <Head>
-                <title>MongShare | Edit Code</title>
+                <title>MongoShare | Edit Code</title>
             </Head>
             <Navbar />
             {edit_pass === editPass ? (
@@ -126,7 +126,7 @@ const EditCode = ({
 
 EditCode.getInitialProps = async (req) => {
     const id = req.query.id
-    const res = await axios.get(`${process.env.DOMAIN ? process.env.DOMAIN : "https://mongshare.vercel.app"}/api/code/${id}`)
+    const res = await axios.get(`${process.env.DOMAIN ? process.env.DOMAIN : "https://mongoshare.vercel.app"}/api/code/${id}`)
     const json = await res.data;
     return {
         authorName: json.authorName,

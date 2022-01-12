@@ -38,7 +38,7 @@ const Home = () => {
         autoClose: 20000
       });
 
-      axios.post(`${process.env.DOMAIN ? process.env.DOMAIN : "https://mongshare.vercel.app"}/api/code`, {
+      axios.post(`${process.env.DOMAIN ? process.env.DOMAIN : "https://mongoshare.vercel.app"}/api/code`, {
         authorName: authorName,
         language_label: language.label,
         language: language.value,
@@ -64,13 +64,13 @@ const Home = () => {
     <div className="p-3 bg-gray-900">
       <ToastContainer />
       <Head>
-        <title>MongShare | New Code</title>
+        <title>MongoShare | New Code</title>
         <meta name="description" content="Share code" />
-        <meta name="title" content={`MongShare | Sharing Code With MongShare!`} />
+        <meta name="title" content={`MongoShare | Sharing Code With MongoShare!`} />
         <meta name="image" content="/favicon.ico" />
-        <meta property="og:title" content={`MongShare | Sharing Code With MongShare!`} />
+        <meta property="og:title" content={`MongoShare | Sharing Code With MongoShare!`} />
         <meta property="og:description" content="Share code" />
-        <meta property="og:image" content="/Banner.png" />
+        <meta property="og:image" content="/MongoShare Banner.png" />
       </Head>
       <Navbar />
       <div className="p-10 hidden lg:block">

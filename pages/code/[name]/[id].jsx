@@ -80,13 +80,13 @@ const Code = ({
         <div className="p-3">
             <ToastContainer />
             <Head>
-                <title>MongShare | Code by {name}</title>
+                <title>MongoShare | Code by {name}</title>
                 <meta name="description" content="Share code" />
-                <meta name="title" content={`MongShare | Code by ${name}`} />
+                <meta name="title" content={`MongoShare | Code by ${name}`} />
                 <meta name="image" content="/favicon.ico" />
-                <meta property="og:title" content={`MongShare | Code by ${name}`} />
+                <meta property="og:title" content={`MongoShare | Code by ${name}`} />
                 <meta property="og:description" content="Share code" />
-                <meta property="og:image" content="/Banner.png" />
+                <meta property="og:image" content="/MongoShare Banner.png" />
             </Head>
             <Navbar />
             <div className="p-10 hidden lg:block">
@@ -158,7 +158,7 @@ const Code = ({
 Code.getInitialProps = async (req) => {
     const id = req.query.id;
     const url = req.asPath;
-    const res = await axios.get(`${process.env.DOMAIN ? process.env.DOMAIN : "https://mongshare.vercel.app"}/api/code/${id}`)
+    const res = await axios.get(`${process.env.DOMAIN ? process.env.DOMAIN : "https://mongoshare.vercel.app"}/api/code/${id}`)
     const json = await res.data;
     return {
         authorName: json.authorName,
@@ -168,7 +168,7 @@ Code.getInitialProps = async (req) => {
         },
         code: json.code,
         editPass: json.edit_pass,
-        url: `${process.env.DOMAIN ? process.env.DOMAIN : "https://mongshare.vercel.app"}${url}`
+        url: `${process.env.DOMAIN ? process.env.DOMAIN : "https://mongoshare.vercel.app"}${url}`
     }
 }
 
