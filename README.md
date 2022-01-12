@@ -1,9 +1,19 @@
-<div style="text-align:center"><img src="./public/Banner.png" style="" />
+<div style="text-align:center">
+  <img src="./public/Banner.png" style="" />
+</div>
+<div align="center">
+  
+  ![](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+  ![](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+  ![](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+
 </div>
 
 <h1 align="center">MongShare</h1>
 <h3 align="center"><b>Sharing Code With MongShare!</b></h3>
-This project is made with `Next.js`
+
+## About
+MongShare helps with sharing your code. It is made with MongoDB & Next.js. MongShare is a hackathon project for [MongoDB Atlas Hackathon on DEV](https://dev.to/devteam/announcing-the-mongodb-atlas-hackathon-on-dev-4b6m).
 
 ## Local Development
 
