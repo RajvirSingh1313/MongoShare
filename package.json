@@ -1,0 +1,26 @@
+{
+  "name": "mongshare",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "ace-builds": "^1.4.13",
+    "axios": "^0.24.0",
+    "mongodb": "^3.6.3",
+    "next": "^12.0.8",
+    "next-connect": "^0.11.0",
+    "react": "^17.0.2",
+    "react-ace": "^9.5.0",
+    "react-select": "^5.2.1",
+    "react-toastify": "^8.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^11.0.0",
+    "postcss": "^8.4.5",
+    "postcss-preset-env": "^7.2.3",
+    "tailwindcss": "^3.0.13"
+  }
+}

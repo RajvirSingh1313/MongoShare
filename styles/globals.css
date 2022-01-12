@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #111827;
+}
+
+.pass-btn {
+  transform: translateY(4px);
+}
+
+.pass-logo {
+  transform: translateX(1.4px);
+}
